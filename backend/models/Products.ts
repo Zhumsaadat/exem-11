@@ -34,7 +34,7 @@ const ProductsSchema = new Schema<ProductsTypes>({
     },
     category: {
         type: String,
-        enum: ['other', 'computers', 'cars', 'household'],
+        enum: ['other', 'appliances', 'cars', "textile" ],
         default: 'other',
         required: true,
     }
