@@ -3,7 +3,7 @@ import express from 'express';
 import mongoose from "mongoose";
 import config from "./config";
 import usersRouter from './routes/users';
-
+import productsRouter from './routes/products';
 
 
 const app = express();
@@ -14,6 +14,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use('/users', usersRouter);
+app.use('/products', productsRouter);
 
 const run = async () => {
     await  mongoose.connect(config.mongoose.db);
