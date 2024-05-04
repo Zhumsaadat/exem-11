@@ -27,11 +27,15 @@ const run = async () => {
             username: 'Anna',
             password: '1234',
             token: randomUUID(),
+            displayName: 'Anna',
+            phone: '996500787878',
         },
         {
             username: 'John',
             password: '12345',
             token: randomUUID(),
+            displayName: 'Jhon Doe',
+            phone: '996700987654',
         },
     );
 
