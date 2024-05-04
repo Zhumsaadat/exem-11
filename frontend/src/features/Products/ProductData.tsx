@@ -1,10 +1,10 @@
-import {useAppDispatch, useAppSelector} from '../../App/hooks';
-import {useNavigate, useParams} from 'react-router-dom';
-import {Button, Card, CardContent, CardMedia, Grid, styled, Typography} from '@mui/material';
-import {selectProducts} from './productsSlice.ts';
-import {useEffect} from 'react';
-import {deleteOneProduct, getProducts} from './productsThunks.ts';
-import {selectUser} from '../Users/usersSlice.ts';
+import { useAppDispatch, useAppSelector } from '../../App/hooks';
+import { useNavigate, useParams } from 'react-router-dom';
+import { Button, Card, CardContent, CardMedia, Grid, styled, Typography } from '@mui/material';
+import { selectProducts } from './productsSlice.ts';
+import { useEffect } from 'react';
+import { deleteOneProduct, getProducts } from './productsThunks.ts';
+import { selectUser } from '../Users/usersSlice.ts';
 
 const ProductData = () => {
   const dispatch = useAppDispatch();
